@@ -30,6 +30,7 @@ class Stack {
 // check if the chars are balanced out
 bool isBalanced(const std::string& expression) {
   Stack stack;
+ // Loop through and push to the stack
   for (char c : expression) {
     if (c == '(') {
       stack.push(c);
